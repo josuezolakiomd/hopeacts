@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Clock-In-Out System</title>
+</head>
+
+<body>
+  <div class="warning container flex flex-center flex-ai-c flex-column">
+    <i class="fa-solid fa-exclamation-triangle"></i>
+    <h1>Ops!</h1>
+    <!-- <h2>Small devices viewer not available</h2> -->
+    <p>This website is currently optimized for laptops only. The small devices viewer is not yet available.</p>
+  </div>
+  <header>
+    <div class="container flex flex-jc-sb flex-ai-c">
+      <div class="header-logo">
+        <a href="#">
+          Learning Lab
+          <i class="fa-solid fa-clock"></i>
+        </a>
+      </div>
+
+      <div class="header-menu">
+        <nav>
+          <ul>
+            <li class="active"><a href="#section-programs">Programs</a></li>
+            <li class=""><a href="#">Schedule</a></li>
+            <li class=""><a href="#">Volunteers</a></li>
+            <li class=""><a href="#">Teacher</a></li>
+            <li class=""><a href="#">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="banner bg-dark">
+    <div class="opacity"></div>
+    <div class="container flex flex-column flex-ai-c">
+      <h1 class="banner-title">PAE Volunteer's Portal.</h1>
+      <p class="banner-description">Welcome to the PAE Volunteer's Portal. Here you can clock in and out, view your
+        hours,
+        and see the schedule.</p>
+      <a href="#" class="banner-button">Clock-In</a>
+      <div class="banner-dots flex flex-center">
+        <span class="dot-1"></span>
+        <span class="dot-2"></span>
+        <span class="dot-3"></span>
+      </div>
+    </div>
+  </section>
+
+  <section id="section-programs" class="section-programs">
+    <div class="container flex">
+      <div class="left-side flex flex-column">
+        <div class="course-header flex flex-column flex-ai-c flex-center">
+          <i class="fa-solid fa-graduation-cap"></i>
+          <h2 class="course-title">Programs</h2>
+          <p class="course-description">
+            Here are some of the courses that you can take at the Learning Lab.
+            Take a look and see which one is right for you.
+          </p>
+        </div>
+        <div class="course-options">
+          <ul>
+            <li>
+              <a href="https://media.learningupgrade.com/prod/WebGL/indexFullScreen.html" target="_blank">
+                <i class="fa-solid fa-book-open-reader"></i>
+                <span>Learning Upgrade</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://app.getengen.com/v2/#/login" target="_blank">
+                <i class="fa-solid fa-chalkboard-user"></i>
+                <span>EnGen</span>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.digitalliteracyassessment.org/login/" target="_blank">
+                <i class="fa-solid fa-laptop-file"></i>
+                <span>NorthStar</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="right-side flex flex-column">
+        <div class="top">
+          <a href="https://media.learningupgrade.com/prod/WebGL/indexFullScreen.html" target="_blank"
+            class="flex flex-jc-sb">
+            <div class="program-photo flex flex-ai-c">
+              <span class="photo learning-upgrade"></span>
+            </div>
+            <div class="program-info">
+              <h2 class="program-title">Upgrade</h2>
+              <p class="program-description">Learning Upgrade is a fun and engaging way to learn math and English.</p>
+            </div>
+          </a>
+        </div>
+
+        <div class="bottom">
+          <a href="https://app.getengen.com/v2/#/login" target="_blank" class="flex flex-jc-sb">
+            <div class="program-photo flex flex-ai-c">
+              <span class="photo engen"></span>
+            </div>
+            <div class="program-info">
+              <h2 class="program-title">EnGen</h2>
+              <p class="program-description">
+                EnGen is a program that teaches students about engineering and how to build things.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <body>
+
+    <script src="script.js"></script>
+  </body>
+
+</html>

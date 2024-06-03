@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a,
+a:visited,
+a:link,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+
+
+/*FLEXBOX */
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-ai-c {
+  align-items: center;
+}
+
+.flex-jc-c {
+  justify-content: center;
+}
+
+.flex-jc-sb {
+  justify-content: space-between;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: #1c1c1c;
+  color: #999999;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* HEADER */
+header {
+  height: 150px;
+}
+
+header .container {
+  height: inherit;
+}
+
+.header-logo a {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #f4f4f4;
+}
+
+ul,
+li {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+}
+
+li {
+  padding: 0 20px;
+}
+
+li a {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+li a:hover {
+  transition: ease-in-out 0.2s;
+  color: #99999975;
+}
+
+.fa-clock {
+  color: #00ff00 !important;
+  margin-left: 10px;
+
+}
+
+/* SECTION BANNER */
+.banner {
+  background-color: #333;
+  height: calc(100vh - 150px);
+  background-image: url("./src/images/banner-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* opacity: 0.8; */
+  color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner .opacity {
+  background-color: rgba(0, 0, 0, 0.711);
+  width: 100%;
+  height: calc(100vh - 150px);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.banner h1,
+.banner p,
+.banner a {
+  z-index: 999;
+}
+
+.banner h1 {
+  max-width: 650px;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.banner p {
+  max-width: 650px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.banner a {
+  padding: 10px 20px;
+  background-color: #00ff00;
+  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border-radius: 5px;
+}
+
+.banner a:hover {
+  transition: ease-in-out 0.2s;
+  background-color: #00ff0083;
+}
+
+.banner-dots {
+  width: 300px;
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.active-dot {
+  background-color: #f4f4f4 !important;
+}
+
+.banner-dots span {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  border: 4px solid #f4f4f4;
+  border-radius: 50%;
+  margin: 0 10px;
+  padding: 10px;
+
+}
+
+/* SECTION PROGRAMS */
+
+.section-programs {
+  height: inherit;
+}
+
+.section-programs .container {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  gap: 30px;
+}
+
+.section-programs .left-side,
+.section-programs .right-side {
+  flex: 1;
+  width: 300px;
+  height: inherit;
+  border-radius: 0.25rem;
+}
+
+.section-programs .left-side {
+  /* background-color: #3333334d; */
+  border: dashed 2px #3333334d;
+
+  list-style: none;
+}
+
+.left-side .course-header {
+  width: 100%;
+  height: inherit;
+  padding: 30px;
+  /* background-color: red; */
+}
+
+.course-header .fa-graduation-cap {
+  font-size: 3.5rem;
+  color: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+.course-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.course-header p {
+  font-size: 1.06rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+  /* text-align: center; */
+}
+
+.left-side .course-options {
+  flex: 1;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-size: 1.06rem;
+  /* background-color: blue; */
+}
+
+.course-options ul,
+.course-options li {
+  gap: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.course-options a {
+  padding: 20px;
+}
+
+.course-options .fa-solid {
+  margin-right: 20px;
+  font-size: 1.5rem;
+  color: #00ff00;
+}
+
+.course-options span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #f4f4f4;
+}
+
+.section-programs .right-side {
+  gap: 30px;
+}
+
+.right-side .top,
+.right-side .bottom {
+  flex: 1;
+  border-radius: 0.25rem;
+}
+
+.right-side .top a,
+.right-side .bottom a {
+  width: 100%;
+  height: inherit;
+  border-radius: 0.25rem;
+  padding: 30px;
+  /* border: dashed 2px #3333334d; */
+}
+
+.right-side .top a:hover,
+.right-side .bottom a:hover {
+  transition: ease-in-out 0.2s;
+  background-color: #3333334d;
+  /* border: dashed 2px transparent; */
+}
+
+.top .program-photo,
+.bottom .program-photo {
+  flex: 1.6;
+}
+
+.photo {
+  display: block;
+  width: 80%;
+  height: 140px;
+  border-radius: 5px;
+}
+
+.learning-upgrade {
+  background-image: url("./src/images/prgora\,1.1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.engen {
+  background-image: url("./src/images/program-2.1.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.top .program-info,
+.bottom .program-info {
+  flex: 1;
+  padding: 30px 0;
+}
+
+.program-info h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.program-info p {
+  font-size: 1.06rem;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+/* LIGHT MODE */
+
+.light-mode {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.warning {
+  display: none;
+  width: 100%;
+  height: 100vh;
+}
+
+.fa-exclamation-triangle {
+  font-size: 5rem;
+  color: #e30303 !important;
+  margin-bottom: 20px;
+
+
+}
+
+.warning h1 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #e30303;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.warning p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #e30303;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (max-width: 1195px) {
+  .warning {
+    display: flex;
+  }
+
+  header,
+  .banner,
+  .section-programs {
+    display: none;
+  }
+}
+
+
+/* Testing Variables */
+.bg-light {
+  background-color: #f4f4f4;
+}
+
+.bg-dark {
+  background-color: #333333;
+}
+
+.fa-solid {
+  font-weight: 900;
+  color: blue
+}
